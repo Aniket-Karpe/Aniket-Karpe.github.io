@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Profile</title>
+    <title>Aniket Karpe - Portfolio</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            color: #333;
         }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Container */
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
+
+        /* Profile Section */
         .profile {
             text-align: center;
             margin-bottom: 30px;
@@ -25,36 +41,67 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            border: 3px solid #333;
         }
         .profile h1 {
+            font-size: 2em;
             margin: 10px 0;
         }
         .profile p {
             margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        /* Project List */
+        .projects {
+            list-style: none;
+            padding: 0;
+        }
+        .projects li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .projects li:hover {
+            background-color: #d1d1d1;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <h1>Aniket</h1>
     <div class="container">
+        <!-- Profile Section -->
         <div class="profile">
             <img src="https://avatars.githubusercontent.com/Aniket-Karpe" alt="Profile Picture">
             <h1>Aniket Karpe</h1>
-            <p>GitHub: <a href="https://github.com/Aniket-Karpe">Aniket-Karpe</a></p>
-            <p>Email: your.email@example.com</p>
-            <p>Location: Your Location</p>
-            <p>Bio: Write something about yourself</p>
+            <p>GitHub: <a href="https://github.com/Aniket-Karpe" target="_blank">Aniket-Karpe</a></p>
+            <p>Email: karpeaniket33@gmail.com</p>
+            <p>Location: Magerpatta Pune</p>
+            <p>Bio: Write something about yourself, such as your skills or current focus.</p>
         </div>
+        
+        <!-- Projects Section -->
         <h2>Projects</h2>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
+        <ul class="projects">
+            <li><a href="#">Project 1</a> - Brief description of what this project does.</li>
+            <li><a href="#">Project 2</a> - Brief description of what this project does.</li>
+            <li><a href="#">Project 3</a> - Brief description of what this project does.</li>
             <!-- Add more projects as needed -->
         </ul>
+        
+        <!-- Footer -->
         <footer>
-            <p>© 2024 Your Name. All rights reserved.</p>
+            <p>© 2024 Aniket Karpe. All rights reserved.</p>
         </footer>
     </div>
 </body>
