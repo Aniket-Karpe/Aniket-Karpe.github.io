@@ -17,8 +17,12 @@
             text-decoration: none;
             color: #333;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #333;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
 
         /* Container */
@@ -53,19 +57,41 @@
             font-size: 1.1em;
         }
 
+        /* Section Styles */
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .section p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        /* Skill List */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            columns: 2;
+        }
+        .skills ul li {
+            margin: 5px 0;
+        }
+        
         /* Project List */
-        .projects {
+        .projects ul {
             list-style: none;
             padding: 0;
         }
-        .projects li {
+        .projects ul li {
             margin: 10px 0;
             padding: 10px;
             background-color: #e0e0e0;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        .projects li:hover {
+        .projects ul li:hover {
             background-color: #d1d1d1;
         }
 
@@ -87,19 +113,60 @@
             <p>GitHub: <a href="https://github.com/Aniket-Karpe" target="_blank">Aniket-Karpe</a></p>
             <p>Email: karpeaniket33@gmail.com</p>
             <p>Location: Magerpatta Pune</p>
-            <p>Bio:With 2 years of hands-on experience in Android development, I specialize in building dynamic, user-centric applications that prioritize performance, scalability, and security. My technical repertoire includes a comprehensive understanding of Android base skills, proficiency in FlutterFlow, and in-depth expertise with the Dart framework. Additionally, I bring robust back-end development skills with knowledge of the Spring framework, enabling the creation of full-stack mobile solutions.
+            <p>Bio: With 2 years of hands-on experience in Android development, I specialize in building dynamic, user-centric applications that prioritize performance, scalability, and security. My technical repertoire includes a comprehensive understanding of Android base skills, proficiency in FlutterFlow, and in-depth expertise with the Dart framework. Additionally, I bring robust back-end development skills with knowledge of the Spring framework, enabling the creation of full-stack mobile solutions.
 
 Committed to continuous learning and innovation, I have successfully delivered applications that meet user needs and business goals. My passion for problem-solving and crafting efficient code drives me to stay at the forefront of emerging technologies in mobile development..</p>
         </div>
-        
+
+        <!-- Skills Section -->
+        <div class="section skills">
+            <h2>Key Skills</h2>
+            <ul>
+                <li>Android Development</li>
+                <li>FlutterFlow</li>
+                <li>Dart Framework</li>
+                <li>Spring Framework</li>
+                <li>Full-Stack Mobile Solutions</li>
+                <li>Performance Optimization</li>
+                <li>Scalability</li>
+                <li>Security</li>
+            </ul>
+        </div>
+
         <!-- Projects Section -->
-        <h2>Projects</h2>
-        <ul class="projects">
-            <li><a href="#">Project 1</a> - Brief description of what this project does.</li>
-            <li><a href="#">Project 2</a> - Brief description of what this project does.</li>
-            <li><a href="#">Project 3</a> - Brief description of what this project does.</li>
-            <!-- Add more projects as needed -->
-        </ul>
+        <div class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Project 1</a> - Brief description of what this project does.</li>
+                <li><a href="#">Project 2</a> - Brief description of what this project does.</li>
+                <li><a href="#">Project 3</a> - Brief description of what this project does.</li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section experience">
+            <h2>Experience</h2>
+            <p><strong>Company Name</strong> - Position (Dates)</p>
+            <p>Description of your role and achievements at this company.</p>
+            <p><strong>Company Name</strong> - Position (Dates)</p>
+            <p>Description of your role and achievements at this company.</p>
+            <!-- Add more experience as needed -->
+        </div>
+
+        <!-- Education Section -->
+        <div class="section education">
+            <h2>Education</h2>
+            <p><strong>University Name</strong> - Degree (Dates)</p>
+            <p>Brief description of your studies and any relevant achievements.</p>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section certifications">
+            <h2>Certifications</h2>
+            <p><strong>Certification Name</strong> - Issued by (Date)</p>
+            <p>Brief description of what the certification covers.</p>
+        </div>
         
         <!-- Footer -->
         <footer>
